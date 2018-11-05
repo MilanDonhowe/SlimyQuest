@@ -6,15 +6,11 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprSpaceman</sprite>
-    <sprite>sprites\sprSpaceWall</sprite>
-    <sprite>sprites\sprSpaceEngine</sprite>
-    <sprite>sprites\sprSpaceFloor</sprite>
-    <sprite>sprites\spControlPanel</sprite>
+    <sprite>sprites\sprFear</sprite>
+    <sprite>sprites\sprWall</sprite>
+    <sprite>sprites\spPlayer</sprite>
   </sprites>
-  <backgrounds name="background">
-    <background>background\background0</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scriptSlowText.gml</script>
@@ -23,17 +19,12 @@
     <font>fonts\fntCool</font>
   </fonts>
   <objects name="objects">
-    <objects name="Space">
-      <object>objects\obSpaceEngine</object>
-      <object>objects\obSpaceWall</object>
-      <object>objects\obSpaceFloor</object>
-      <object>objects\obControlPanel</object>
-    </objects>
+    <object>objects\obFear</object>
+    <object>objects\obWall</object>
     <object>objects\obPlayer</object>
-    <object>objects\ob_Text</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmSpace</room>
+    <room>rooms\rmTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
