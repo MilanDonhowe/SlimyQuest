@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obIntro</parentName>
+  <parentName>obBounce</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -30,11 +30,14 @@ x += 2
 
 hp = 10;
 spd = 4;
-jumpspd = 4;
+jumpspd = 5;
 grav = 4;
+falling = false;
+times = 0;
 
-image_xscale = 3;
-image_yscale = 3;
+scale = 3;
+image_xscale = scale;
+image_yscale = scale;
 </string>
           </argument>
         </arguments>
@@ -58,31 +61,92 @@ image_yscale = 3;
           <argument>
             <kind>1</kind>
             <string>
+// inputs 
+left = keyboard_check(ord('A')) or keyboard_check(vk_left);
+right = keyboard_check(ord('D')) or keyboard_check(vk_right);
+
+
+
+
 // vertical collisions
 
 if(!place_meeting(x, y+1, obWall)){
     y += grav;
+    
+    falling = true;
+    
+    sprite_index = spPlayerFalling;
+    
     if(place_meeting(x, y, obWall)){
         //y = yprevious;
         while(place_meeting(x, y, obWall)){
             y -= 1;
         }
+        
     }
+    
+    if (place_meeting(x,y+1,obWall)){
+        
+        // play the bounce animation
+        instance_change(obBounce, true);
+        
+    }
+} else {
+    falling = false;
+    image_speed = 0;
+    sprite_index = spPlayer;
 }
 
-//left-right movement and collisions (rudimentary)
+// left-right movement and collisions (rudimentary)
 
-left = keyboard_check(ord('A'));
-right = keyboard_check(ord('D'));
 
-if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall))) x -= spd;
-if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))) x += spd;
+if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall))){
 
+    if (falling == false){
+        //animation
+        sprite_index = spPlayerMove; 
+        image_speed = 1;
+        image_xscale = -scale;
+    }
+    // movement left
+    x -= spd;
+    
+    //move background?
+    background_x[1] += spd/8;
+
+}
+if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
+    
+    if (falling == false){
+        //animation
+        sprite_index = spPlayerMove;
+        image_speed = 1;
+        image_xscale = scale;
+    }
+    
+    // movement right
+    x += spd;
+    
+    // move background?
+    background_x[1] -= spd/8;
+ 
+}
 // jumping
+/*
+jump = keyboard_check_pressed(vk_space);
 
-//jump = keyboard_check_pressed(vk_space);
+if(jump){
+    times = 5;
+}
 
-//if(jump) y -= jumpspd;
+if (times != 0){
+    times -= 1;
+    y -= (jumpspd + (jumpspd * times));
+    
+}
+*/
+
+
 
 
 </string>
@@ -100,6 +164,22 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))) x += spd;
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
         <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>

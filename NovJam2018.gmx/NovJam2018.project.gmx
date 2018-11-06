@@ -10,8 +10,14 @@
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\spPlayer</sprite>
     <sprite>sprites\sprIntro</sprite>
+    <sprite>sprites\spPlayerFalling</sprite>
+    <sprite>sprites\spBounce</sprite>
+    <sprite>sprites\spPlayerMove</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_1</background>
+    <background>background\bg_real</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scriptSlowText.gml</script>
@@ -23,7 +29,7 @@
     <object>objects\obFear</object>
     <object>objects\obWall</object>
     <object>objects\obPlayer</object>
-    <object>objects\obIntro</object>
+    <object>objects\obBounce</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest</room>
