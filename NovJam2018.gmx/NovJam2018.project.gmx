@@ -13,6 +13,7 @@
     <sprite>sprites\spPlayerFalling</sprite>
     <sprite>sprites\spBounce</sprite>
     <sprite>sprites\spPlayerMove</sprite>
+    <sprite>sprites\spLaunch</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -30,6 +31,10 @@
     <object>objects\obWall</object>
     <object>objects\obPlayer</object>
     <object>objects\obBounce</object>
+    <objects name="launchPadObjects">
+      <object>objects\obLaunch</object>
+      <object>objects\obLaunchAnimate</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest</room>
