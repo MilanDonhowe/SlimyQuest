@@ -9,6 +9,7 @@
     <sprite>sprites\sprFear</sprite>
     <sprite>sprites\sprWall</sprite>
     <sprite>sprites\spPlayer</sprite>
+    <sprite>sprites\sprIntro</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -22,6 +23,7 @@
     <object>objects\obFear</object>
     <object>objects\obWall</object>
     <object>objects\obPlayer</object>
+    <object>objects\obIntro</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmTest</room>

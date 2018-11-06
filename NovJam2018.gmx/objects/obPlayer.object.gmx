@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obIntro</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// setup create variables
+x += 2
 
 hp = 10;
+spd = 4;
 jumpspd = 4;
 grav = 4;
 
@@ -56,17 +58,31 @@ image_yscale = 3;
           <argument>
             <kind>1</kind>
             <string>
-if(!place_meeting(x, y+grav, obWall)){
+// vertical collisions
+
+if(!place_meeting(x, y+1, obWall)){
     y += grav;
-    if(place_meeting(x,y,obWall)){
-        y = yprevious;
+    if(place_meeting(x, y, obWall)){
+        //y = yprevious;
         while(place_meeting(x, y, obWall)){
             y -= 1;
         }
     }
-
 }
 
+//left-right movement and collisions (rudimentary)
+
+left = keyboard_check(ord('A'));
+right = keyboard_check(ord('D'));
+
+if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall))) x -= spd;
+if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))) x += spd;
+
+// jumping
+
+//jump = keyboard_check_pressed(vk_space);
+
+//if(jump) y -= jumpspd;
 
 
 </string>
@@ -74,26 +90,20 @@ if(!place_meeting(x, y+grav, obWall)){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obWall">
+    <event eventtype="9" enumb="82">
       <action>
         <libid>1</libid>
-        <id>605</id>
+        <id>331</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_restart_game</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>collide</string>
-          </argument>
-        </arguments>
       </action>
     </event>
   </events>
