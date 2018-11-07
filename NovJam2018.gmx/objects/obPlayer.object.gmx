@@ -35,6 +35,8 @@ grav = 4;
 gravConst = grav;
 falling = false;
 times = 0;
+arm = false;
+
 
 scale = 3;
 image_xscale = scale;
@@ -95,6 +97,12 @@ right = keyboard_check(ord('D')) or keyboard_check(vk_right);
 
 // vertical collisions
 
+if(place_meeting(x, y, obWall)){
+    while(place_meeting(x, y, obWall)){
+        y += 1;
+    }
+}
+
 if(!place_meeting(x, y+1, obWall)){
     y += grav;
     
@@ -119,8 +127,13 @@ if(!place_meeting(x, y+1, obWall)){
 } else {
     falling = false;
     image_speed = 0;
-    sprite_index = spPlayer;
+    if(arm == true){
+        sprite_index = spPlayerArm;
+    } else {
+        sprite_index = spPlayer;
+    }
 }
+
 
 // left-right movement and collisions (rudimentary)
 
@@ -129,8 +142,12 @@ if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall))){
 
     if (falling == false){
         //animation
-        sprite_index = spPlayerMove; 
-        image_speed = 1;
+        if (arm == true){
+            sprite_index = spPlayerMoveArm;
+        } else {
+            sprite_index = spPlayerMove;
+        }
+       
         image_xscale = -scale;
     }
     // movement left
@@ -144,8 +161,12 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
     
     if (falling == false){
         //animation
-        sprite_index = spPlayerMove;
-        image_speed = 1;
+        if (arm == true){
+            sprite_index = spPlayerMoveArm;
+        } else {
+            sprite_index = spPlayerMove;
+        }
+        
         image_xscale = scale;
     }
     
@@ -156,9 +177,19 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
     background_x[1] -= spd/8;
  
 }
-// jumping
+// punching
 
-jump = keyboard_check_pressed(vk_space);
+punch = keyboard_check_pressed(vk_space);
+
+
+if (punch) {
+    // change depending on direction...
+    instance_change(obPunch, true);
+
+}
+
+
+// launch pads
 
 if(place_meeting(x,y,obLaunch)){
     grav = 0;
