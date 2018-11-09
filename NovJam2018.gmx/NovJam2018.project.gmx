@@ -19,6 +19,9 @@
     <sprite>sprites\spPlayerMoveArm</sprite>
     <sprite>sprites\spPlayerPunch</sprite>
     <sprite>sprites\spFearWalking</sprite>
+    <sprite>sprites\spPaddle</sprite>
+    <sprite>sprites\spPaddleTransformation</sprite>
+    <sprite>sprites\spGrunt</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
