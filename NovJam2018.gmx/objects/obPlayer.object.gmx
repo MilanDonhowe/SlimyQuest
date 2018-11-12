@@ -37,11 +37,44 @@ falling = false;
 times = 0;
 arm = false;
 
+damage = false;
 
 scale = 3;
 image_xscale = scale;
 image_yscale = scale;
 sprite_index = spPlayer;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// end damage stage
+
+damage = false;
+grav = gravConst;
+jumpSpd = 0;
+hp -= 1;
+
+if ((hp &lt; 0) or (hp == 0)){
+    game_restart();
+}
 </string>
           </argument>
         </arguments>
@@ -142,7 +175,7 @@ if(!place_meeting(x, y+1, obWall)){
 // left-right movement and collisions (rudimentary)
 
 
-if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall))){
+if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
 
     if (falling == false){
         //animation
@@ -194,7 +227,7 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
 punch = keyboard_check_pressed(vk_space);
 
 
-if ( (punch) &amp;&amp; (falling == false) ) {
+if ( (punch) &amp;&amp; (falling == false) &amp;&amp; (arm == true) ) {
     // change depending on direction...
     instance_change(obPunch, true);
 
@@ -211,10 +244,47 @@ if(place_meeting(x,y,obLaunch)){
 
 y -= jumpSpd;
 
+// paddle transformation
+
+//if (place_meeting(x, y, obTransPaddle)) {
+ //   instance_destroy();
+//}
 
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///take damage
+
+if ((place_meeting(x, y, obFear)) &amp;&amp; (damage != true)){
+    alarm[1] = 30;
+    damage = true;
+    
+    
+    
+    grav = 0;
+    jumpSpd = 10;
+    y -= jumpSpd;
+}
 
 </string>
           </argument>

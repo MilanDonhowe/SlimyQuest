@@ -45,7 +45,17 @@
     </objects>
     <object>objects\obArm</object>
     <object>objects\obPunch</object>
+    <object>objects\ob_test</object>
+    <objects name="Paddles">
+      <object>objects\obTransPaddle</object>
+      <object>objects\obPaddle</object>
+      <object>objects\obPaddleAnimation</object>
+    </objects>
+    <object>objects\obCameraFollow</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tm_Parabola</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rmTest</room>
   </rooms>
