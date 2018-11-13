@@ -37,6 +37,9 @@
     <background>background\bgDirt</background>
     <background>background\bgTileset</background>
     <background>background\bgForest</background>
+    <background>background\bgSun</background>
+    <background>background\bgBush</background>
+    <background>background\bgTree</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -68,6 +71,7 @@
       <object>objects\obGround</object>
       <object>objects\obWall</object>
     </objects>
+    <object>objects\obPortal</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>

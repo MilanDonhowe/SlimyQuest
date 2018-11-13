@@ -31,8 +31,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bgForest" x="0" y="-64" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgSun" x="200" y="380" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgForest" x="0" y="200" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -42,13 +42,13 @@
   </backgrounds>
   <views>
     <view visible="-1" objName="obCameraFollow" xview="0" yview="0" wview="512" hview="384" xport="0" yport="0" wport="1024" hport="768" hborder="512" vborder="96" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="obGround" x="0" y="704" name="inst_7521E49F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -88,6 +88,14 @@
     <instance objName="obPinkWall" x="224" y="640" name="inst_34219425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obPinkWall" x="224" y="608" name="inst_3B967D64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obLaunch" x="160" y="640" name="inst_13CC79F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="672" name="inst_BB0278D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="640" name="inst_200D048B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="608" name="inst_3F8B757D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="576" name="inst_A646A226" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="544" name="inst_1E6A1260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="512" name="inst_D3DDDB78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPinkWall" x="0" y="480" name="inst_4F8D31AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obPortal" x="736" y="704" name="inst_0B0BCFBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgDirt" x="0" y="736" w="32" h="32" xo="0" yo="0" id="10000291" name="inst_03FD139A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -122,6 +130,18 @@
     <tile bgName="bgDirt" x="928" y="736" w="32" h="32" xo="0" yo="0" id="10000320" name="inst_7D9247DA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDirt" x="960" y="736" w="32" h="32" xo="0" yo="0" id="10000321" name="inst_20BB2E8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDirt" x="992" y="736" w="32" h="32" xo="0" yo="0" id="10000322" name="inst_AE9E2825" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgTree" x="608" y="576" w="128" h="128" xo="0" yo="0" id="10000334" name="inst_742437F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgTree" x="352" y="576" w="128" h="128" xo="0" yo="0" id="10000335" name="inst_D52CF3A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgTree" x="32" y="576" w="128" h="128" xo="0" yo="0" id="10000344" name="inst_A19E7B60" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="352" y="672" w="32" h="32" xo="0" yo="0" id="10000338" name="inst_5976FAE0" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="384" y="672" w="32" h="32" xo="0" yo="0" id="10000339" name="inst_C315C7D1" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="448" y="672" w="32" h="32" xo="0" yo="0" id="10000341" name="inst_9EB8C091" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="416" y="672" w="32" h="32" xo="0" yo="0" id="10000342" name="inst_8E5DF139" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="480" y="672" w="32" h="32" xo="0" yo="0" id="10000343" name="inst_59B21CFE" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="64" y="672" w="32" h="32" xo="0" yo="0" id="10000345" name="inst_2CC87459" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="96" y="672" w="32" h="32" xo="0" yo="0" id="10000346" name="inst_7727C23D" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="0" y="640" w="32" h="32" xo="0" yo="0" id="10000347" name="inst_306A3297" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBush" x="32" y="672" w="32" h="32" xo="0" yo="0" id="10000348" name="inst_13B2417F" depth="700000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

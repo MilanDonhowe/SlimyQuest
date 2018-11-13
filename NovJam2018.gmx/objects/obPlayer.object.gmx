@@ -196,7 +196,10 @@ if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
     x -= spd;
     
     //move background?
-    background_x[1] += spd/8;
+    if (room != rmIntro){
+        background_x[1] += spd/8;
+    }
+    //background_x[0] -= spd/12;
 
 }
 if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
@@ -219,8 +222,10 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
     x += spd;
     
     // move background?
-    background_x[1] -= spd/8;
- 
+    if(room != rmIntro){
+        background_x[1] -= spd/8;
+    }
+    //background_x[0] += spd/12;
 }
 // punching
 
@@ -250,6 +255,15 @@ y -= jumpSpd;
 //if (place_meeting(x, y, obTransPaddle)) {
  //   instance_destroy();
 //}
+
+
+
+//portal
+
+if(place_meeting(x,y, obPortal)){
+    room_goto_next();
+}
+
 
 
 
