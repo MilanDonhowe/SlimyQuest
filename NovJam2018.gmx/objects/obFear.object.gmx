@@ -39,7 +39,7 @@ saveGrav = grav;
 
 spd = 1;
 saveSpd = spd;
-hp = 2;
+hp = 3;
 
 damage = false;
 
@@ -166,13 +166,20 @@ if (direct = 1){
             <kind>1</kind>
             <string>/// take damage
 
-if ( ((place_meeting(x,y, obPunch)) or (place_meeting(x+spd, y, obPunch) or (place_meeting(x-spd, y, obPunch)) ) &amp;&amp; (damage != true) )){
+if ( ((place_meeting(x,y, obPunch)) or (place_meeting(x+15, y, obPunch) or (place_meeting(x-15, y, obPunch)) ) &amp;&amp; (damage != true) )){
 
     alarm[1] = 30;
     hp -= 1;
     spd = -3;
     damage = true;
     sprite_index = sprFear;
+    
+    
+    // play sound
+    audio_play_sound(sndEnemyDamage, 2, false);
+    
+    //effect
+    effect_create_above(ef_smoke, x, y, 2, c_black);
     
     
     //jump back

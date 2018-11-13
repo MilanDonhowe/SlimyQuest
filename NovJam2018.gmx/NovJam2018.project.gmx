@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndPlayerDamage</sound>
+    <sound>sound\sndEnemyDamage</sound>
+    <sound>sound\sndLaunchPad</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprFear</sprite>
     <sprite>sprites\sprWall</sprite>
@@ -22,10 +26,17 @@
     <sprite>sprites\spPaddle</sprite>
     <sprite>sprites\spPaddleTransformation</sprite>
     <sprite>sprites\spGrunt</sprite>
+    <sprite>sprites\spHP</sprite>
+    <sprite>sprites\spGround</sprite>
+    <sprite>sprites\spDirt</sprite>
+    <sprite>sprites\spPinkWall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
     <background>background\bg_real</background>
+    <background>background\bgDirt</background>
+    <background>background\bgTileset</background>
+    <background>background\bgForest</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -36,7 +47,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\obFear</object>
-    <object>objects\obWall</object>
     <object>objects\obPlayer</object>
     <object>objects\obBounce</object>
     <objects name="launchPadObjects">
@@ -52,11 +62,18 @@
       <object>objects\obPaddleAnimation</object>
     </objects>
     <object>objects\obCameraFollow</object>
+    <object>objects\obHP</object>
+    <objects name="blocks">
+      <object>objects\obPinkWall</object>
+      <object>objects\obGround</object>
+      <object>objects\obWall</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\rmIntro</room>
     <room>rooms\rmTest</room>
   </rooms>
   <help>

@@ -28,7 +28,7 @@
             <string>/// setup create variables
 x += 2
 
-hp = 10;
+hp = 6;
 spd = 3;
 jumpSpd = 0;
 grav = 4;
@@ -70,7 +70,7 @@ sprite_index = spPlayer;
 damage = false;
 grav = gravConst;
 jumpSpd = 0;
-hp -= 1;
+
 
 if ((hp &lt; 0) or (hp == 0)){
     game_restart();
@@ -237,6 +237,7 @@ if ( (punch) &amp;&amp; (falling == false) &amp;&amp; (arm == true) ) {
 // launch pads
 
 if(place_meeting(x,y,obLaunch)){
+    audio_play_sound(sndLaunchPad, 3, false);
     grav = 0;
     jumpSpd = 10;
     alarm[0] = 20;
@@ -279,11 +280,58 @@ if ((place_meeting(x, y, obFear)) &amp;&amp; (damage != true)){
     alarm[1] = 30;
     damage = true;
     
+    audio_play_sound(sndPlayerDamage, 1, false);
     
+    hp -= 1;
     
     grav = 0;
     jumpSpd = 10;
     y -= jumpSpd;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>switch(hp){
+    case 6:
+        draw_sprite(spHP, 0, view_wview[0]/8, view_hview[0]/6);
+        break;
+    case 5:
+        draw_sprite(spHP, 1, view_wview[0]/8, view_hview[0]/6);
+        break;
+    case 4:
+        draw_sprite(spHP, 2, view_wview[0]/8, view_hview[0]/6);
+        break;
+    case 3:
+        draw_sprite(spHP, 3, view_wview[0]/8, view_hview[0]/6);
+        break;
+    case 2:
+        draw_sprite(spHP, 4, view_wview[0]/8, view_hview[0]/6);
+        break;
+    case 1:
+        draw_sprite(spHP, 5, view_wview[0]/8, view_hview[0]/6);
+        break;
+
+
 }
 
 </string>
@@ -301,6 +349,22 @@ if ((place_meeting(x, y, obFear)) &amp;&amp; (damage != true)){
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
         <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="78">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>

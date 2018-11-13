@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>24</width>
+  <width>48</width>
   <height>24</height>
   <frames>
     <frame index="0">images\spPlayerPunch_0.png</frame>
@@ -28,5 +28,8 @@
     <frame index="5">images\spPlayerPunch_5.png</frame>
     <frame index="6">images\spPlayerPunch_6.png</frame>
     <frame index="7">images\spPlayerPunch_7.png</frame>
+    <frame index="8">images\spPlayerPunch_8.png</frame>
+    <frame index="9">images\spPlayerPunch_9.png</frame>
+    <frame index="10">images\spPlayerPunch_10.png</frame>
   </frames>
 </sprite>
