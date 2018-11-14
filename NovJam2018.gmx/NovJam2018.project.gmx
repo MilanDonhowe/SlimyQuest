@@ -30,6 +30,7 @@
     <sprite>sprites\spGround</sprite>
     <sprite>sprites\spDirt</sprite>
     <sprite>sprites\spPinkWall</sprite>
+    <sprite>sprites\sprPortal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
