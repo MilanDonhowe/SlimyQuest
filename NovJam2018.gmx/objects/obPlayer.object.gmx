@@ -196,8 +196,8 @@ if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
     x -= spd;
     
     //move background?
-    if (room != rmIntro){
-        background_x[1] += spd/8;
+    if (room == rmIntro){
+        //background_x[1] += spd;
     }
     //background_x[0] -= spd/12;
 
@@ -260,9 +260,11 @@ y -= jumpSpd;
 
 //portal
 
+/*
 if(place_meeting(x,y, obPortal)){
     room_goto_next();
 }
+*/
 
 
 

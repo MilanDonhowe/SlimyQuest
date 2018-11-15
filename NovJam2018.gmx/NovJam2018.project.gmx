@@ -31,6 +31,8 @@
     <sprite>sprites\spDirt</sprite>
     <sprite>sprites\spPinkWall</sprite>
     <sprite>sprites\sprPortal</sprite>
+    <sprite>sprites\sprArm</sprite>
+    <sprite>sprites\spCloud</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -41,6 +43,7 @@
     <background>background\bgSun</background>
     <background>background\bgBush</background>
     <background>background\bgTree</background>
+    <background>background\background8</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

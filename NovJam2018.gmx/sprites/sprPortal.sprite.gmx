@@ -6,7 +6,7 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>0</bboxmode>
+  <bboxmode>1</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>127</bbox_right>
   <bbox_top>0</bbox_top>
@@ -25,5 +25,29 @@
     <frame index="2">images\sprPortal_2.png</frame>
     <frame index="3">images\sprPortal_3.png</frame>
     <frame index="4">images\sprPortal_4.png</frame>
+    <frame index="5">images\sprPortal_5.png</frame>
+    <frame index="6">images\sprPortal_6.png</frame>
+    <frame index="7">images\sprPortal_7.png</frame>
+    <frame index="8">images\sprPortal_8.png</frame>
+    <frame index="9">images\sprPortal_9.png</frame>
+    <frame index="10">images\sprPortal_10.png</frame>
+    <frame index="11">images\sprPortal_11.png</frame>
+    <frame index="12">images\sprPortal_12.png</frame>
+    <frame index="13">images\sprPortal_13.png</frame>
+    <frame index="14">images\sprPortal_14.png</frame>
+    <frame index="15">images\sprPortal_15.png</frame>
+    <frame index="16">images\sprPortal_16.png</frame>
+    <frame index="17">images\sprPortal_17.png</frame>
+    <frame index="18">images\sprPortal_18.png</frame>
+    <frame index="19">images\sprPortal_19.png</frame>
+    <frame index="20">images\sprPortal_20.png</frame>
+    <frame index="21">images\sprPortal_21.png</frame>
+    <frame index="22">images\sprPortal_22.png</frame>
+    <frame index="23">images\sprPortal_23.png</frame>
+    <frame index="24">images\sprPortal_24.png</frame>
+    <frame index="25">images\sprPortal_25.png</frame>
+    <frame index="26">images\sprPortal_26.png</frame>
+    <frame index="27">images\sprPortal_27.png</frame>
+    <frame index="28">images\sprPortal_28.png</frame>
   </frames>
 </sprite>
