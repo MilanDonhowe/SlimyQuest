@@ -85,6 +85,7 @@
     <instance objName="obGround" x="992" y="704" name="inst_8BD086F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obPlayer" x="96" y="640" name="inst_15BDF487" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obPortal" x="273" y="665" name="inst_353C1584" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obScore" x="224" y="160" name="inst_AE68C60C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgDirt" x="0" y="736" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_51EEB261" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

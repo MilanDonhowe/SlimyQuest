@@ -33,6 +33,15 @@
     <sprite>sprites\sprPortal</sprite>
     <sprite>sprites\sprArm</sprite>
     <sprite>sprites\spCloud</sprite>
+    <sprites name="points">
+      <sprite>sprites\sp100</sprite>
+      <sprite>sprites\sp200</sprite>
+      <sprite>sprites\sp500</sprite>
+      <sprite>sprites\sp1000</sprite>
+      <sprite>sprites\sp10k</sprite>
+      <sprite>sprites\sp100k</sprite>
+      <sprite>sprites\sp1mil</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -51,6 +60,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntCool</font>
+    <font>fonts\fntScore</font>
   </fonts>
   <objects name="objects">
     <object>objects\obFear</object>
@@ -76,6 +86,16 @@
       <object>objects\obWall</object>
     </objects>
     <object>objects\obPortal</object>
+    <object>objects\obScore</object>
+    <objects name="points">
+      <object>objects\ob100</object>
+      <object>objects\ob200</object>
+      <object>objects\ob500</object>
+      <object>objects\ob1000</object>
+      <object>objects\ob10k</object>
+      <object>objects\ob100k</object>
+      <object>objects\ob1mil</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
