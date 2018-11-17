@@ -43,6 +43,18 @@ scale = 3;
 image_xscale = scale;
 image_yscale = scale;
 sprite_index = spPlayer;
+
+if (place_meeting(x,y, obTransPaddle)) {
+    while(place_meeting(x,y, obTransPaddle)) {
+        y -= 1;
+    }
+    grav = 0;
+    jumpSpd = 10;
+    alarm[0] = 20;
+}
+
+
+
 </string>
           </argument>
         </arguments>
@@ -99,6 +111,7 @@ if ((hp &lt; 0) or (hp == 0)){
             <kind>1</kind>
             <string>grav = gravConst;
 jumpSpd = 0;
+
 </string>
           </argument>
         </arguments>
@@ -122,6 +135,7 @@ jumpSpd = 0;
           <argument>
             <kind>1</kind>
             <string>
+
 // inputs 
 left = keyboard_check(ord('A')) or keyboard_check(vk_left);
 right = keyboard_check(ord('D')) or keyboard_check(vk_right);

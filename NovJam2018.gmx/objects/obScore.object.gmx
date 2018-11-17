@@ -30,6 +30,10 @@ global.theScore = 0;
 global.delay = 60;
 global.spd = 2;
 
+//score font
+fntScore = font_add("kongtext.ttf", 40, false, false, 32, 128);
+
+
 </string>
           </argument>
         </arguments>
@@ -56,6 +60,7 @@ global.spd = 2;
 draw_set_color(c_white);
 
 if(global.theScore &gt; 1){
+    if(global.theScore &gt; 1000) draw_set_color(c_blue);
     draw_text(view_wview[0], view_hview[0]-360, string(global.theScore));
 }
 </string>

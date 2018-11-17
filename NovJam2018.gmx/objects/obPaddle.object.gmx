@@ -50,12 +50,23 @@
             <kind>1</kind>
             <string>up = keyboard_check(ord('W')) or keyboard_check(vk_up);
 down = keyboard_check(ord('S')) or keyboard_check(vk_down);
+change = keyboard_check_pressed(vk_space);
+
 
 if (up) {
-    y -= spd;
+    if(!place_meeting(x, y-spd, obWall)){
+        y -= spd;
+    }
 }
 if (down) {
-    y += spd;
+    if(!place_meeting(x,y+spd, obWall)){
+        y += spd;
+    }
+}
+
+if (change) {
+    instance_create(x,y, obTransPaddle);
+    instance_change(obPlayer, true);
 }
 </string>
           </argument>

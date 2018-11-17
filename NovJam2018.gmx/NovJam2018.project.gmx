@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>kongtext.ttf</name>
+      <exists>-1</exists>
+      <size>10280</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>kongtext.ttf</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sndPlayerDamage</sound>
@@ -42,6 +61,11 @@
       <sprite>sprites\sp100k</sprite>
       <sprite>sprites\sp1mil</sprite>
     </sprites>
+    <sprite>sprites\sprTitle</sprite>
+    <sprites name="miscDecorations">
+      <sprite>sprites\spFlower1</sprite>
+      <sprite>sprites\spFlower2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -60,7 +84,6 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntCool</font>
-    <font>fonts\fntScore</font>
   </fonts>
   <objects name="objects">
     <object>objects\obFear</object>
@@ -96,11 +119,20 @@
       <object>objects\ob100k</object>
       <object>objects\ob1mil</object>
     </objects>
+    <objects name="flowers">
+      <object>objects\obFlower</object>
+      <object>objects\obFlower2</object>
+    </objects>
+    <objects name="titleObjs">
+      <object>objects\obTitle</object>
+      <object>objects\obTitleNull</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\rmTitle</room>
     <room>rooms\rmIntro</room>
     <room>rooms\rmTest</room>
   </rooms>
