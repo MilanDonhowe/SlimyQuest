@@ -58,6 +58,10 @@ hp = 3;
     }
     instance_change(obPaddleAnimation, true);
 }
+
+if (!place_meeting(x,y+1, obWall)) {
+    y += 1;
+}
 </string>
           </argument>
         </arguments>

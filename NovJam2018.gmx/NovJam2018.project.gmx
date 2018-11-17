@@ -66,6 +66,8 @@
       <sprite>sprites\spFlower1</sprite>
       <sprite>sprites\spFlower2</sprite>
     </sprites>
+    <sprite>sprites\spBreakWall</sprite>
+    <sprite>sprites\spBullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -100,6 +102,9 @@
       <object>objects\obTransPaddle</object>
       <object>objects\obPaddle</object>
       <object>objects\obPaddleAnimation</object>
+      <object>objects\obBulletRight</object>
+      <object>objects\obBulletLeft</object>
+      <object>objects\obBullet</object>
     </objects>
     <object>objects\obCameraFollow</object>
     <object>objects\obHP</object>
@@ -107,6 +112,7 @@
       <object>objects\obPinkWall</object>
       <object>objects\obGround</object>
       <object>objects\obWall</object>
+      <object>objects\obBreakWall</object>
     </objects>
     <object>objects\obPortal</object>
     <object>objects\obScore</object>
@@ -134,7 +140,7 @@
   <rooms name="rooms">
     <room>rooms\rmTitle</room>
     <room>rooms\rmIntro</room>
-    <room>rooms\rmTest</room>
+    <room>rooms\rmLvl1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
