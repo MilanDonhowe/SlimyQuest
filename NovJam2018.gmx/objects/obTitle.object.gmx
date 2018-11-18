@@ -28,7 +28,7 @@
             <string>/// Load Kong Text
 fntKongText = font_add("kongtext.ttf", 30, false, false, 32, 128);
 
-scr_text("testing the text box functions", 1, 100, 100);
+
 </string>
           </argument>
         </arguments>
