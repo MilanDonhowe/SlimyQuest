@@ -82,7 +82,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scriptSlowText.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntCool</font>
@@ -133,6 +133,7 @@
       <object>objects\obTitle</object>
       <object>objects\obTitleNull</object>
     </objects>
+    <object>objects\obj_text</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
@@ -141,6 +142,8 @@
     <room>rooms\rmTitle</room>
     <room>rooms\rmIntro</room>
     <room>rooms\rmLvl1</room>
+    <room>rooms\rmLvl2</room>
+    <room>rooms\rmLvl3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
