@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rand = random(1);
+            <string>randomize()
+rand = random(1);
 
 if (rand &gt; 0.5) image_speed = -0.1;
 else image_speed = 0.1;

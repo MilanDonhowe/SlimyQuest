@@ -31,61 +31,19 @@ size = 3;
 image_xscale = size;
 image_yscale = size;
 
-cycle = 40;
+
+
+step = 1;
+
+cycle = 40
 cy1 = 0;
 cy2 = 0;
 
-step = 1;
-
-bounce = 0.25;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>bounce = 0.25;
-step = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>bounce = -bounce;
-alarm[1] = 30;
+// floating code
+anchorY = y;
+frequency = 0.1;
+amplitude = 2;
+timer = 0;
 </string>
           </argument>
         </arguments>
@@ -133,7 +91,8 @@ if (step == 1) {
     alarm[0] = 30;
 }
 
-y += bounce;
+y = anchorY + sin(timer*frequency)*amplitude;
+timer++;
 </string>
           </argument>
         </arguments>
