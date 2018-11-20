@@ -31,6 +31,7 @@
   <sprites name="sprites">
     <sprite>sprites\sprFear</sprite>
     <sprite>sprites\sprWall</sprite>
+    <sprite>sprites\spWallBreaking</sprite>
     <sprite>sprites\spPlayer</sprite>
     <sprite>sprites\sprIntro</sprite>
     <sprite>sprites\spPlayerFalling</sprite>
@@ -68,6 +69,7 @@
     </sprites>
     <sprite>sprites\spBreakWall</sprite>
     <sprite>sprites\spBullet</sprite>
+    <sprite>sprites\spSign</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -135,6 +137,8 @@
     </objects>
     <object>objects\obj_text</object>
     <object>objects\ob_Messenger</object>
+    <object>objects\obSign</object>
+    <object>objects\obWallBreaking</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
@@ -142,6 +146,7 @@
   <rooms name="rooms">
     <room>rooms\rmTitle</room>
     <room>rooms\rmIntro</room>
+    <room>rooms\rmLvl0</room>
     <room>rooms\rmLvl1</room>
     <room>rooms\rmLvl2</room>
     <room>rooms\rmLvl3</room>

@@ -32,6 +32,59 @@ walk = true;
 alarm[0] = 240;
 
 
+image_xscale = 3/4;
+image_yscale = 3/4;
+
+transform = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>transform = true;
+global.stay = false;
+instance_destroy(obj_text);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_text("Yikes, he sounds pretty mad.  Anyways, I'll have to turn into a portal now.  Hopefully I'll see you around meager slime!  Good luck on your quest!", 0.25, x+20, y-500);
+alarm[3] = 700;
 </string>
           </argument>
         </arguments>
@@ -56,7 +109,8 @@ alarm[0] = 240;
             <kind>1</kind>
             <string>
 
-scr_text("DEAR STUPID SLIME:  I CHALLENGE YOU TO CONQUER MY MOST DEADLY DUNGEON YET! I BET YOU WILL FAIL.  HAHAHAA P.S. YOU SUCK.", 0.5, x+16, y-500, "wiz");
+scr_text("DEAR STUPID SLIME:  I CHALLENGE YOU TO CONQUER MY INVINCIBLE DUNGEON! I BET YOU WILL FAIL. HAHAHAA P.S. YOU SUCK.", 0.25, x+16, y-500, "wiz");
+alarm[2] = 500;
 </string>
           </argument>
         </arguments>
@@ -84,9 +138,9 @@ image_speed = 0;
 image_index = 0;
 
 if (instance_exists(obPlayer)){
-    scr_text('Greetings ye meager slime.  I posess a message from the evil mage Matlet. It reads:', 0.5, x+16, y-500);
+    scr_text('Greetings ye meager slime.  I have a message from the evil mage Matlet. It reads:', 0.25, x+20, y-500);
 }
-alarm[1] = 200;
+alarm[1] = 400;
 </string>
           </argument>
         </arguments>
@@ -115,6 +169,20 @@ alarm[1] = 200;
 
 if(walk == true) {
     x -= 1;
+}
+
+if (transform == true){
+
+    if(image_xscale &gt; 0){
+        image_xscale -= 0.01;
+        image_yscale -= 0.01;
+    } else {
+        image_xscale = 1;
+        image_yscale = 1;
+        y -= 40;
+        instance_change(obPortal, true);
+    }
+
 }
 </string>
           </argument>

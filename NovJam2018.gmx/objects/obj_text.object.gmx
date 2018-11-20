@@ -73,7 +73,7 @@ if (char != undefined) {
     if (char == 'wiz'){
         draw_set_color(c_black);
         draw_rectangle(x, y, x+boxwidth+5, y+boxheight+20, 0);
-        draw_set_color(c_purple);
+        draw_set_color(c_fuchsia);
     }
 } else {
     draw_set_color(c_white);

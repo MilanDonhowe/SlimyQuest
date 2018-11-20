@@ -137,6 +137,7 @@ jumpSpd = 0;
             <string>
 
 // inputs 
+
 left = keyboard_check(ord('A')) or keyboard_check(vk_left);
 right = keyboard_check(ord('D')) or keyboard_check(vk_right);
 
@@ -188,6 +189,7 @@ if(!place_meeting(x, y+1, obWall)){
 
 // left-right movement and collisions (rudimentary)
 
+if (global.stay == false){
 
 if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
 
@@ -210,8 +212,8 @@ if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
     x -= spd;
     
     //move background?
-    if (room == rmIntro){
-        //background_x[1] += spd;
+    if (room != rmIntro){
+        background_x[1] += spd/8;
     }
     //background_x[0] -= spd/12;
 
@@ -241,6 +243,8 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
     }
     //background_x[0] += spd/12;
 }
+
+}
 // punching
 
 punch = keyboard_check_pressed(vk_space);
@@ -260,6 +264,7 @@ if(place_meeting(x,y,obLaunch)){
     grav = 0;
     jumpSpd = 10;
     alarm[0] = 20;
+    y -= jumpSpd;
 }
 
 y -= jumpSpd;
@@ -341,7 +346,8 @@ if ((place_meeting(x, y, obFear)) &amp;&amp; (damage != true)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(hp){
+            <string>draw_set_alpha(1);
+switch(hp){
     case 6:
         draw_sprite(spHP, 0, view_wview[0]/8, view_hview[0]/6);
         break;
@@ -386,6 +392,28 @@ if ((place_meeting(x, y, obFear)) &amp;&amp; (damage != true)){
       </action>
     </event>
     <event eventtype="9" enumb="78">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///global.stay = false
+global.stay = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>222</id>
