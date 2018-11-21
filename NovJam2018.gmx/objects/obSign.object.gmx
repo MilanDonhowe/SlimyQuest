@@ -41,6 +41,22 @@ offset = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -105,6 +121,11 @@ if (draw == true) {
         case rmLvl3:
             text = "Fight back.  Space to Punch.";
             offset = 0;
+            break;
+        case rmEndDemo:
+            text = "That's all I have made so far.  Underwhelming I know.  HOWEVER, there shall be more; this is going to be my entry for the gameoff GameJam which ends in...  10 days.  Yeah I am fucked for time.  I plan to make 5 more levels and will finish the boss fight with matlet.  -- MILAN THE MAKER OF THIS GAME."
+            offset = 0;
+            alarm[0] = 600;
             break;
         default:
             text = "hello world";

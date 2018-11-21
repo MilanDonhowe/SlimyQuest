@@ -36,6 +36,22 @@ global.stay = true;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -54,6 +70,8 @@ global.stay = true;
           <argument>
             <kind>1</kind>
             <string>scr_text("Hahaha... so you actually have gotten past the dungeon.  You have overcome all obstacles.    ... Except one.  ME.  HAHAHAHA GAME OVER SILLY SLIME, EN GUARDE!", 0.5, x, y-128, "wiz");
+
+alarm[1] = 600;
 </string>
           </argument>
         </arguments>
