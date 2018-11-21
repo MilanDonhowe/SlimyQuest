@@ -80,8 +80,6 @@
     <instance objName="obWall" x="128" y="384" name="inst_AA40B04D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="224" y="384" name="inst_E728EED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="192" y="384" name="inst_DEF0C176" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obSpike" x="32" y="672" name="inst_2D51B932" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obSpike" x="0" y="672" name="inst_60F34358" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obBreakWall" x="224" y="512" name="inst_B31CA766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="160" y="384" name="inst_264568DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="256" y="384" name="inst_2E9820C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

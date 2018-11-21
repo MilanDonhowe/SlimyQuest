@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = random_range(0.5, 1.5);
+            <string>randomize();
+speed = random_range(0.5, 1.5);
 direction = 0;
 </string>
           </argument>

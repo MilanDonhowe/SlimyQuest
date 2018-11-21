@@ -79,6 +79,7 @@
     </sprites>
     <sprite>sprites\spBug</sprite>
     <sprite>sprites\spSpike</sprite>
+    <sprite>sprites\spBall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -122,6 +123,7 @@
       <object>objects\obPinkWall</object>
       <object>objects\obGround</object>
       <object>objects\obWall</object>
+      <object>objects\obBOSSWALL</object>
       <object>objects\obBreakWall</object>
     </objects>
     <object>objects\obPortal</object>
@@ -153,14 +155,19 @@
       <object>objects\obKeysUpDown</object>
       <object>objects\obSpaceBar</object>
     </objects>
-    <objects name="wiz">
-      <object>objects\obWizSpawn</object>
-      <object>objects\obWiz</object>
-    </objects>
     <object>objects\obSpike</object>
     <object>objects\obDamage</object>
     <object>objects\obPlayerGoTo</object>
     <object>objects\obHP</object>
+    <objects name="boss">
+      <objects name="wiz">
+        <object>objects\obWizSpawn</object>
+        <object>objects\obWiz</object>
+      </objects>
+      <object>objects\obPlayerDMG</object>
+      <object>objects\obBall</object>
+      <object>objects\obBOSSdmg</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
