@@ -29,7 +29,7 @@
 image_index = 0;
 walk = true;
 
-alarm[0] = 240;
+alarm[0] = 120;
 
 
 image_xscale = 3/4;
@@ -60,6 +60,7 @@ transform = false;
             <kind>1</kind>
             <string>transform = true;
 global.stay = false;
+instance_create(obPlayer.x, obPlayer.y-64, obKeys);
 instance_destroy(obj_text);
 </string>
           </argument>
@@ -138,9 +139,9 @@ image_speed = 0;
 image_index = 0;
 
 if (instance_exists(obPlayer)){
-    scr_text('Greetings ye meager slime.  I have a message from the evil mage Matlet. It reads:', 0.25, x+20, y-500);
+    scr_text('Greetings ye meager slime.  I have a message from the evil mage Matlet. It reads:', 0.5, x+20, y-500);
 }
-alarm[1] = 400;
+alarm[1] = 200;
 </string>
           </argument>
         </arguments>
@@ -168,7 +169,7 @@ alarm[1] = 400;
 }
 
 if(walk == true) {
-    x -= 1;
+    x -= 2;
 }
 
 if (transform == true){

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obDamage</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -121,28 +121,29 @@ if(place_meeting(x,y,obWall)){
 /// movement here
 
 // left
-if (direct = 0){
+if (instance_exists(obCameraFollow)){
+    if (obCameraFollow.x &lt; x){
 
-    image_xscale = scale;
-    if(!place_meeting(x-(spd*4),y,obWall)){
-        x -= spd;
-    } else {
-        direct = 1;
+        image_xscale = scale;
+        if(!place_meeting(x-(spd*4),y,obWall)){
+            x -= spd;
+        } else {
+            direct = 1;
+        }
+
     }
 
-}
+    if (obCameraFollow.x &gt; x){
 
-if (direct = 1){
+        image_xscale = -scale;
+        if(!place_meeting(x+spd,y,obWall)){
+            x += spd;
+        } else {
+            direct = 0;
+        }
 
-    image_xscale = -scale;
-    if(!place_meeting(x+spd,y,obWall)){
-        x += spd;
-    } else {
-        direct = 0;
     }
-
 }
-
 //}
 </string>
           </argument>
@@ -198,6 +199,32 @@ if ( ((place_meeting(x,y, obPunch)) or (place_meeting(x+15, y, obPunch) or (plac
     */
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obFear">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

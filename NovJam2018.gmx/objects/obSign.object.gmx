@@ -34,6 +34,8 @@ maxlength = view_wview[0];
 spd = 1;
 
 font = font_add("kongtext.ttf", 10, false, false, 32, 128);
+
+offset = 0;
 </string>
           </argument>
         </arguments>
@@ -94,12 +96,15 @@ if (draw == true) {
             break;
         case rmLvl0:
             text = "You are more than a slime.  Use W/S or Up/Down Arrow Keys to move up and down as a paddle.  Space to eject from the paddle."
+            offset = -150;
             break
         case rmLvl1:
             text = "Use A/D or Left/Right Arrow Keys to fire a ball as a paddle.";
+            offset = -150;
             break;
         case rmLvl3:
-            text = "Fight back.";
+            text = "Fight back.  Space to Punch.";
+            offset = 0;
             break;
         default:
             text = "hello world";
@@ -120,14 +125,14 @@ if (draw == true) {
     draw_set_alpha(0.5);
     draw_set_font(font);
     draw_set_color(c_black);
-    draw_rectangle(x, y-150, x+boxwidth, y+boxheight-200, 0);
+    draw_rectangle(x, y + offset, x+boxwidth, y+boxheight + offset, 0);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
     draw_text_ext
     (
         x + padding,
-        y + padding-150,
+        y + padding + offset,
         text,
         font_size+(font_size/2),
         text_width

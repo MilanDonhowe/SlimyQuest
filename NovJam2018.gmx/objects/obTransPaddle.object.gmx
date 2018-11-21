@@ -27,7 +27,15 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = 0;
+
+image_xscale = 1;
+image_yscale = 1;
 hp = 3;
+
+
+failsave = 120;
+
+
 </string>
           </argument>
         </arguments>
@@ -50,18 +58,47 @@ hp = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x, y, obPlayer)) {
+            <string>while(failsave &gt; 0){
+    failsave -= 1;
+    if (instance_exists(obPlayer)){
+    with(obPlayer){
+        if (place_meeting(x,y, obTransPaddle)) {
+            while(place_meeting(x,y, obTransPaddle)) {
+                y -= 1;
+            }
+            y -= 10;
+            grav = 0;
+            jumpSpd = 10;
+            alarm[0] = 20;
+        }
+    }
+}
+
+
+}
+
+
+
+
+if (place_meeting(x, y, obPlayer)) {
     hp = obPlayer.hp;
 
-    with (obPlayer) {
-        instance_destroy();
+    obPlayer.x = x;
+    obPlayer.y = y;
+    with (obPlayer){
+        instance_change(obPaddleAnimation, true);
     }
-    instance_change(obPaddleAnimation, true);
+    instance_destroy();
+    
+    
 }
 
 if (!place_meeting(x,y+1, obWall)) {
     y += 1;
 }
+
+
+
 </string>
           </argument>
         </arguments>

@@ -28,7 +28,9 @@
             <string>/// Load Kong Text
 fntKongText = font_add("kongtext.ttf", 30, false, false, 32, 128);
 
-
+blink = 40;
+bleep = 0;
+bop = 0;
 </string>
           </argument>
         </arguments>
@@ -54,7 +56,18 @@ fntKongText = font_add("kongtext.ttf", 30, false, false, 32, 128);
             <string>draw_set_font(fntKongText);
 draw_set_color(c_black);
 
-draw_text(x,y+500, "[Press Enter to Start]")
+if (bleep &lt; blink) {
+    draw_text(x+60,y+500, "[Press Enter to Start]")
+    bleep += 1;
+} else {
+    if(bop &lt; (blink/2)){
+        bop += 1;
+    } else {
+        bleep = 0;
+        bop = 0;
+    }
+    
+}
 </string>
           </argument>
         </arguments>

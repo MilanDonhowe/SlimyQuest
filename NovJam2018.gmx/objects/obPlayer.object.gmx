@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obBounce</parentName>
   <maskName>spPlayer</maskName>
   <events>
@@ -35,7 +35,8 @@ grav = 4;
 gravConst = grav;
 falling = false;
 times = 0;
-arm = false;
+
+global.arm = false;
 
 damage = false;
 
@@ -43,7 +44,7 @@ scale = 3;
 image_xscale = scale;
 image_yscale = scale;
 sprite_index = spPlayer;
-
+/*
 if (place_meeting(x,y, obTransPaddle)) {
     while(place_meeting(x,y, obTransPaddle)) {
         y -= 1;
@@ -52,7 +53,7 @@ if (place_meeting(x,y, obTransPaddle)) {
     jumpSpd = 10;
     alarm[0] = 20;
 }
-
+*/
 
 
 </string>
@@ -134,7 +135,8 @@ jumpSpd = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>image_xscale = scale;
+image_yscale = scale;
 
 // inputs 
 
@@ -157,7 +159,7 @@ if(!place_meeting(x, y+1, obWall)){
     
     falling = true;
     
-    if(arm == false){
+    if(global.arm == false){
         sprite_index = spPlayerFalling;
     }
         
@@ -172,14 +174,14 @@ if(!place_meeting(x, y+1, obWall)){
     if (place_meeting(x,y+1,obWall)){
         
         // play the bounce animation
-        if(arm == false){
+        if(global.arm == false){
             instance_change(obBounce, true);
         }
     }
 } else {
     falling = false;
     image_speed = 0;
-    if(arm == true){
+    if(global.arm == true){
         sprite_index = spPlayerArm;
     } else {
         sprite_index = spPlayer;
@@ -195,7 +197,7 @@ if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
 
     if (falling == false){
         //animation
-        if (arm == true){
+        if (global.arm == true){
             sprite_index = spPlayerMoveArm;
         } else {
             sprite_index = spPlayerMove;
@@ -204,7 +206,7 @@ if ((left) &amp;&amp; (!place_meeting(x-spd, y, obWall)) ){
         image_xscale = -scale;
     }
     
-    if(arm == true) {
+    if(global.arm == true) {
         image_xscale = -scale;
     }
     
@@ -222,7 +224,7 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
     
     if (falling == false){
         //animation
-        if (arm == true){
+        if (global.arm == true){
             sprite_index = spPlayerMoveArm;
         } else {
             sprite_index = spPlayerMove;
@@ -230,7 +232,7 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
         image_xscale = scale;
     }
     
-    if(arm == true) {
+    if(global.arm == true) {
         image_xscale = scale;
     }
     
@@ -250,7 +252,7 @@ if ((right) &amp;&amp; (!place_meeting(x+spd, y, obWall))){
 punch = keyboard_check_pressed(vk_space);
 
 
-if ( (punch) &amp;&amp; (falling == false) &amp;&amp; (arm == true) ) {
+if ( (punch) &amp;&amp; (falling == false) &amp;&amp; (global.arm == true) ) {
     // change depending on direction...
     instance_change(obPunch, true);
 
@@ -311,7 +313,7 @@ if(place_meeting(x,y, obPortal)){
             <kind>1</kind>
             <string>///take damage
 
-if ((place_meeting(x, y, obFear)) &amp;&amp; (damage != true)){
+if ((place_meeting(x, y, obDamage)) &amp;&amp; (damage != true)){
     alarm[1] = 30;
     damage = true;
     

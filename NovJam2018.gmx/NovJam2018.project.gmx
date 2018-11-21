@@ -70,6 +70,14 @@
     <sprite>sprites\spBreakWall</sprite>
     <sprite>sprites\spBullet</sprite>
     <sprite>sprites\spSign</sprite>
+    <sprite>sprites\spKeys</sprite>
+    <sprite>sprites\spSpaceBar</sprite>
+    <sprites name="wiz">
+      <sprite>sprites\spWake</sprite>
+      <sprite>sprites\spWiz</sprite>
+    </sprites>
+    <sprite>sprites\spBug</sprite>
+    <sprite>sprites\spSpike</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -109,7 +117,6 @@
       <object>objects\obBullet</object>
     </objects>
     <object>objects\obCameraFollow</object>
-    <object>objects\obHP</object>
     <objects name="blocks">
       <object>objects\obPinkWall</object>
       <object>objects\obGround</object>
@@ -134,11 +141,24 @@
     <objects name="titleObjs">
       <object>objects\obTitle</object>
       <object>objects\obTitleNull</object>
+      <object>objects\obCloud</object>
     </objects>
     <object>objects\obj_text</object>
     <object>objects\ob_Messenger</object>
     <object>objects\obSign</object>
     <object>objects\obWallBreaking</object>
+    <objects name="keyborg">
+      <object>objects\obKeys</object>
+      <object>objects\obKeysUpDown</object>
+      <object>objects\obSpaceBar</object>
+    </objects>
+    <objects name="wiz">
+      <object>objects\obWizSpawn</object>
+      <object>objects\obWiz</object>
+    </objects>
+    <object>objects\obSpike</object>
+    <object>objects\obDamage</object>
+    <object>objects\obPlayerGoTo</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
@@ -150,6 +170,8 @@
     <room>rooms\rmLvl1</room>
     <room>rooms\rmLvl2</room>
     <room>rooms\rmLvl3</room>
+    <room>rooms\rmLvl4</room>
+    <room>rooms\rmLvlBOSS</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
