@@ -47,6 +47,7 @@
     <sprite>sprites\spPaddleTransformation</sprite>
     <sprite>sprites\spGrunt</sprite>
     <sprite>sprites\spHP</sprite>
+    <sprite>sprites\spHPUP</sprite>
     <sprite>sprites\spGround</sprite>
     <sprite>sprites\spDirt</sprite>
     <sprite>sprites\spPinkWall</sprite>
@@ -159,6 +160,7 @@
     <object>objects\obSpike</object>
     <object>objects\obDamage</object>
     <object>objects\obPlayerGoTo</object>
+    <object>objects\obHP</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>

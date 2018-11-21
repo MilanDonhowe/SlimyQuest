@@ -84,7 +84,6 @@
     <instance objName="obSpike" x="0" y="672" name="inst_60F34358" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obBreakWall" x="224" y="512" name="inst_B31CA766" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="160" y="384" name="inst_264568DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obArm" x="156" y="528" name="inst_A4E67AFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="256" y="384" name="inst_2E9820C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="288" y="384" name="inst_0ED9FB66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="320" y="384" name="inst_7D01ED17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -111,8 +110,6 @@
     <instance objName="obWall" x="992" y="384" name="inst_4B7F79E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="1024" y="384" name="inst_01ED002A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obFear" x="1152" y="672" name="inst_73B5E1EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obFear" x="1024" y="672" name="inst_24209D85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obFear" x="896" y="672" name="inst_645A6CA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="1056" y="384" name="inst_EDABB453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="1088" y="384" name="inst_1E3619BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="1120" y="384" name="inst_D3F11ECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -143,6 +140,7 @@
     <instance objName="obWall" x="224" y="448" name="inst_D51CBB98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="224" y="416" name="inst_DC4485F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obPlayerGoTo" x="128" y="704" name="inst_5A74423F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obHP" x="152" y="501" name="inst_82634FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
