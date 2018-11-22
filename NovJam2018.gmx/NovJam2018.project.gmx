@@ -80,6 +80,8 @@
     <sprite>sprites\spBug</sprite>
     <sprite>sprites\spSpike</sprite>
     <sprite>sprites\spBall</sprite>
+    <sprite>sprites\spLocked</sprite>
+    <sprite>sprites\spKey</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -147,7 +149,6 @@
       <object>objects\obCloud</object>
     </objects>
     <object>objects\obj_text</object>
-    <object>objects\ob_Messenger</object>
     <object>objects\obSign</object>
     <object>objects\obWallBreaking</object>
     <objects name="keyborg">
@@ -168,6 +169,12 @@
       <object>objects\obBall</object>
       <object>objects\obBOSSdmg</object>
     </objects>
+    <objects name="messengers">
+      <object>objects\ob_MessengerExpos</object>
+      <object>objects\ob_Messenger</object>
+    </objects>
+    <object>objects\obLocked</object>
+    <object>objects\obKey</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
@@ -180,6 +187,9 @@
     <room>rooms\rmLvl2</room>
     <room>rooms\rmLvl3</room>
     <room>rooms\rmLvl4</room>
+    <room>rooms\rmExpos</room>
+    <room>rooms\rmLvl5</room>
+    <room>rooms\rmLvl6</room>
     <room>rooms\rmLvlBOSS</room>
     <room>rooms\rmEndDemo</room>
   </rooms>

@@ -25,17 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.2;
+            <string>image_speed = 0;
 image_index = 0;
-walk = true;
-
-alarm[0] = 120;
-
-
 image_xscale = 3/4;
 image_yscale = 3/4;
-
+global.stay = true;
+alarm[0] = 60;
 transform = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy(obj_text);
+global.stay = false;
+transform = true;
 </string>
           </argument>
         </arguments>
@@ -59,11 +80,8 @@ transform = false;
           <argument>
             <kind>1</kind>
             <string>instance_destroy(obj_text);
-
-transform = true;
-global.stay = false;
-instance_create(obPlayer.x, obPlayer.y-64, obKeys);
-instance_destroy(obj_text);
+scr_text("...Not one for puns I take it?  Well, nonetheless I wish you luck on the remainder of your quest!  I'd say you are currently about half way.  Good luck!", 0.5, x+20, y-100);
+alarm[4] = 440;
 </string>
           </argument>
         </arguments>
@@ -87,9 +105,8 @@ instance_destroy(obj_text);
           <argument>
             <kind>1</kind>
             <string>instance_destroy(obj_text);
-
-scr_text("Yikes, he sounds pretty mad.  Anyways, I'll have to turn into a portal now.  Hopefully I'll see you around meager slime!  Good luck on your quest!", 0.25, x+20, y-500);
-alarm[3] = 700;
+scr_text("Well, I like the arm.  I really gotta HAND it to you for getting so far.", 0.25, x+20, y-100);
+alarm[3] = 500;
 </string>
           </argument>
         </arguments>
@@ -113,9 +130,8 @@ alarm[3] = 700;
           <argument>
             <kind>1</kind>
             <string>instance_destroy(obj_text);
-
-scr_text("DEAR STUPID SLIME:  I CHALLENGE YOU TO CONQUER MY INVINCIBLE DUNGEON! I BET YOU WILL FAIL. HAHAHAA P.S. YOU SUCK.", 0.25, x+16, y-500, "wiz");
-alarm[2] = 500;
+scr_text("Oh that's right.  You're a slime.   You can't....  erm....   talk.", 0.25, x+20, y-100);
+alarm[2] = 420;
 </string>
           </argument>
         </arguments>
@@ -138,14 +154,10 @@ alarm[2] = 500;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>walk = false;
-image_speed = 0;
-image_index = 0;
+            <string>/// give message to player
 
-if (instance_exists(obPlayer)){
-    scr_text('Greetings ye meager slime.  I have a message from the evil mage Matlet. It reads:', 0.5, x+20, y-500);
-}
-alarm[1] = 200;
+scr_text("Oh, HELLO MEAGER SLIME!  How has your quest been so far?", 0.5, x+20, y-100);
+alarm[1] = 400;
 </string>
           </argument>
         </arguments>
@@ -168,16 +180,8 @@ alarm[1] = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!place_meeting(x, y+1, obWall)){
-    y += 1;
-}
-
-if(walk == true) {
-    x -= 2;
-}
-
-if (transform == true){
-
+            <string>if (transform == true){
+    global.stay = false;
     if(image_xscale &gt; 0){
         image_xscale -= 0.01;
         image_yscale -= 0.01;
@@ -189,6 +193,11 @@ if (transform == true){
     }
 
 }
+
+if(!place_meeting(x, y+1, obWall)){
+    y += 1;
+}
+
 </string>
           </argument>
         </arguments>
