@@ -1,4 +1,4 @@
-# A *Slimy* Situation
+# A *Slimy* Quest
 ![Your browser doesn't support Gifs](https://raw.githubusercontent.com/MilanDonhowe/HybridAdventure/master/sprites/gifs/playerREADME%20(1).gif)
 
 
