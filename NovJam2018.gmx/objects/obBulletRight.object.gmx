@@ -183,6 +183,27 @@ if((x = xprevious) and (y = yprevious)){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play_sound(sndBounce, 3, false);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obWall">
       <action>
@@ -209,29 +230,50 @@ if((x = xprevious) and (y = yprevious)){
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obPaddle">
       <action>
         <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>audio_play_sound(sndBounce, 3, false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obPaddle">
+      <action>
+        <libid>1</libid>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>001001001</string>
           </argument>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>0</kind>
+            <string>spd</string>
           </argument>
         </arguments>
       </action>
@@ -251,9 +293,12 @@ if((x = xprevious) and (y = yprevious)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///timeToDeath = lifetime;
+            <string>audio_play_sound(sndBounce, 3, false);
+///timeToDeath = lifetime;
 timeToDeath = lifetime;
 alarm[0] = 3;
+
+
 
 </string>
           </argument>

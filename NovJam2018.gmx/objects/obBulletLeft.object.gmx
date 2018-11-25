@@ -213,25 +213,25 @@ if((x = xprevious) and (y = yprevious)){
     <event eventtype="4" ename="obPaddle">
       <action>
         <libid>1</libid>
-        <id>115</id>
+        <id>101</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>100100100</string>
           </argument>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>0</kind>
+            <string>spd</string>
           </argument>
         </arguments>
       </action>

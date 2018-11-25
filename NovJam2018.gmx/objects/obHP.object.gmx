@@ -58,6 +58,7 @@ timer++;
 
 if (place_meeting(x,y, obPlayer)){
     with(obPlayer){
+        audio_play_sound(sndPickup, 3, false);
         if(hp &lt; 6){
             hp += 1;
         } else {
@@ -68,11 +69,13 @@ if (place_meeting(x,y, obPlayer)){
 }
 
 if (place_meeting(x,y, obPaddle)){
-    with(obPlayer){
+    with(obPaddle){
+        audio_play_sound(sndPickup, 3, false);
         if(hp &lt; 6){
             hp += 1;
         } else {
             instance_create(x,y, ob200);
+            
         }
     }
     instance_destroy();

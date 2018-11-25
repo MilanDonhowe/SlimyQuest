@@ -36,6 +36,7 @@ spd = 1;
 font = font_add("kongtext.ttf", 10, false, false, 32, 128);
 
 offset = 0;
+specialOffset = 0;
 </string>
           </argument>
         </arguments>
@@ -122,13 +123,14 @@ if (draw == true) {
             text = "Fight back.  Space to Punch.";
             offset = 0;
             break;
-        case rmEndDemo:
-            text = "That's all I have made so far.  Underwhelming I know.  HOWEVER, there shall be more; this is going to be my entry for the gameoff GameJam which ends in...  10 days.  Yeah I am fucked for time.  I plan to make 5 more levels and will finish the boss fight with matlet.  -- MILAN THE MAKER OF THIS GAME."
+        case rmLvl6:
+            text = "Flies suck.  You can kill them with the bullets from paddles."
             offset = 0;
-            alarm[0] = 600;
+            specialOffset = -450;
             break;
         default:
             text = "hello world";
+            break;
     
     
     }
@@ -146,13 +148,13 @@ if (draw == true) {
     draw_set_alpha(0.5);
     draw_set_font(font);
     draw_set_color(c_black);
-    draw_rectangle(x, y + offset, x+boxwidth, y+boxheight + offset, 0);
+    draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+boxheight + offset, 0);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
     draw_text_ext
     (
-        x + padding,
+        x + padding + specialOffset,
         y + padding + offset,
         text,
         font_size+(font_size/2),

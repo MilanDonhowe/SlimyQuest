@@ -32,7 +32,7 @@ fight = false;
 vulnerable = false;
 global.stay = true;
 
-hp = 200;
+hp = 150;
 spd = 2;
 </string>
           </argument>
@@ -218,15 +218,18 @@ if (fight == true){
             while(place_meeting(x,y,obBOSSWALL)){
                 y -= 1;
             }
-            
+            if (place_meeting(x, y+1, obBOSSWALL)) audio_play_sound(sndBossLand, 1, false);
         }
+            
          
     }
 }
 
 
-if (!hp &gt; 0) instance_destroy();
-
+if (!hp &gt; 0){
+    instance_create(x, y, obPortal);
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

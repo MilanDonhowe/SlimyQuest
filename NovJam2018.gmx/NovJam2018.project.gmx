@@ -27,6 +27,14 @@
     <sound>sound\sndPlayerDamage</sound>
     <sound>sound\sndEnemyDamage</sound>
     <sound>sound\sndLaunchPad</sound>
+    <sound>sound\sndPickup</sound>
+    <sound>sound\sndTalk</sound>
+    <sound>sound\sndPortal</sound>
+    <sound>sound\sndMutate</sound>
+    <sound>sound\sndBounce</sound>
+    <sound>sound\sndEnemyBullet</sound>
+    <sound>sound\sndBossLand</sound>
+    <sound>sound\musicTheme</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprFear</sprite>
@@ -82,6 +90,14 @@
     <sprite>sprites\spBall</sprite>
     <sprite>sprites\spLocked</sprite>
     <sprite>sprites\spKey</sprite>
+    <sprite>sprites\spEvilBullet</sprite>
+    <sprite>sprites\obHouseBlock</sprite>
+    <sprites name="villagers">
+      <sprite>sprites\spNPC</sprite>
+      <sprite>sprites\spNPCslep</sprite>
+      <sprite>sprites\spNPCHat</sprite>
+      <sprite>sprites\spNPCsunglasses</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -171,10 +187,24 @@
     </objects>
     <objects name="messengers">
       <object>objects\ob_MessengerExpos</object>
+      <object>objects\obMessengerBoss</object>
       <object>objects\ob_Messenger</object>
     </objects>
     <object>objects\obLocked</object>
     <object>objects\obKey</object>
+    <objects name="bugStuff">
+      <object>objects\obBug</object>
+      <object>objects\obEvilBullet</object>
+    </objects>
+    <objects name="village">
+      <object>objects\obHouse</object>
+      <object>objects\obNPC</object>
+      <object>objects\obNPCsunglass</object>
+      <object>objects\obNPCmerc</object>
+      <object>objects\obNPCslep</object>
+      <object>objects\obNPCmess</object>
+    </objects>
+    <object>objects\obMusic</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
@@ -187,11 +217,13 @@
     <room>rooms\rmLvl2</room>
     <room>rooms\rmLvl3</room>
     <room>rooms\rmLvl4</room>
-    <room>rooms\rmExpos</room>
     <room>rooms\rmLvl5</room>
     <room>rooms\rmLvl6</room>
+    <room>rooms\rmLvl7</room>
+    <room>rooms\rmLvl8</room>
+    <room>rooms\rmFinalExpos</room>
     <room>rooms\rmLvlBOSS</room>
-    <room>rooms\rmEndDemo</room>
+    <room>rooms\rmEndGame</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

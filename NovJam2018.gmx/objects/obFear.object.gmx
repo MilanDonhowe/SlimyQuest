@@ -46,6 +46,9 @@ damage = false;
 
 // 0 = left, 1 = right
 direct = 0;
+
+
+
 </string>
           </argument>
         </arguments>
@@ -106,7 +109,7 @@ if ((hp &lt; 0) or (hp == 0)) {
 
 
 // vertical collision
-if(!place_meeting(x, y+1, obWall)){
+if((!place_meeting(x, y+1, obWall)) and (!place_meeting(x, y+1, obSpike))){
     y += grav;
     while (place_meeting(x, y, obWall)){
         y -= 1;
@@ -125,7 +128,7 @@ if (instance_exists(obCameraFollow)){
     if (obCameraFollow.x &lt; x){
 
         image_xscale = scale;
-        if( (!place_meeting(x-spd,y,obWall)) ){
+        if( (!place_meeting(x-spd,y,obWall)) and (!place_meeting(x-spd, y, obSpike)) ){
             x -= spd;
         } else {
             direct = 1;
@@ -136,7 +139,7 @@ if (instance_exists(obCameraFollow)){
     if (obCameraFollow.x &gt; x){
 
         image_xscale = -scale;
-        if(!place_meeting(x+spd,y,obWall)){
+        if( (!place_meeting(x+spd,y,obWall)) and (!place_meeting(x+spd, y, obSpike)) ){
             x += spd;
         } else {
             direct = 0;
@@ -144,7 +147,7 @@ if (instance_exists(obCameraFollow)){
 
     }
 }
-//}
+
 </string>
           </argument>
         </arguments>

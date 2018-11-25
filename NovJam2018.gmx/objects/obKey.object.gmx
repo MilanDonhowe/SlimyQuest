@@ -25,8 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x, y, obPlayer)) instance_destroy();
-
+            <string>if (place_meeting(x, y, obPlayer)){
+    with (obPlayer){
+        audio_play_sound(sndPickup, 3, false);
+    }
+    instance_destroy();
+}
 if(!place_meeting(x, y+1, obWall)){
     y += 4;
     while(place_meeting(x, y, obWall)){

@@ -193,8 +193,7 @@ timer++;
             <kind>1</kind>
             <string>
 //draw_sprite(sprPortal, 0, x, y);
-
-
+if (change == false) audio_play_sound(sndPortal, 2, false);
 change = true;
 </string>
           </argument>

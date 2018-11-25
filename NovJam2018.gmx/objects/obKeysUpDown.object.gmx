@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="87">
+    <event eventtype="5" enumb="87">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -47,7 +47,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="9" enumb="83">
+    <event eventtype="5" enumb="83">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -63,7 +63,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="9" enumb="40">
+    <event eventtype="5" enumb="40">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -79,7 +79,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="9" enumb="38">
+    <event eventtype="5" enumb="38">
       <action>
         <libid>1</libid>
         <id>203</id>

@@ -83,11 +83,12 @@ if (place_meeting(x,y, obTransPaddle)) {
 damage = false;
 grav = gravConst;
 jumpSpd = 0;
-
-
+/*
 if ((hp &lt; 0) or (hp == 0)){
-    game_restart();
+    global.theScore = 0;
+    room_restart();
 }
+*/
 </string>
           </argument>
         </arguments>
@@ -311,8 +312,10 @@ if(place_meeting(x,y, obPortal)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///take damage
+            <string>///take damage...
 
+
+// from the walking things! 
 if ((place_meeting(x, y, obDamage)) &amp;&amp; (damage != true)){
     alarm[1] = 30;
     damage = true;
@@ -325,6 +328,7 @@ if ((place_meeting(x, y, obDamage)) &amp;&amp; (damage != true)){
     jumpSpd = 10;
     y -= jumpSpd;
 }
+
 
 </string>
           </argument>
@@ -368,8 +372,11 @@ switch(hp){
     case 1:
         draw_sprite(spHP, 5, view_wview[0]/8, view_hview[0]/6);
         break;
-
-
+    case 0:
+        global.theScore = 0;
+        hp = 6;
+        room_restart();
+        break;
 }
 
 </string>
