@@ -3,15 +3,18 @@
 txt = instance_create(argument[2], argument[3], obj_text);
 
 with (txt){
+
     padding = 8;
     maxlength = view_wview[0];
     text = argument[0];
     spd = argument[1];
+    
     if(argument_count > 4){
         char = argument[4];
     } else {
         char = undefined;
     }
+    
     font = font_add("kongtext.ttf", 10, false, false, 32, 128);
     
     text_length = string_length(text);
@@ -22,6 +25,5 @@ with (txt){
     
     boxwidth = text_width + (padding*2);
     boxheight = (text_height/2) + (padding*2);
-    
     
 }

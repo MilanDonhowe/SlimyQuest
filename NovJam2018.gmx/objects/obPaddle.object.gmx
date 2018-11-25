@@ -153,6 +153,7 @@ switch(hp){
     case 0:
         global.theScore = 0;
         hp = 6;
+        instance_change(obPlayer, false);
         room_restart();
         break;
 

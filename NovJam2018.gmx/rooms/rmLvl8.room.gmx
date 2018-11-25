@@ -170,7 +170,6 @@
     <instance objName="obBug" x="672" y="416" name="inst_3ACF9026" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="800" y="288" name="inst_3344ADE9" locked="0" code="" scaleX="6" scaleY="-8.25806427001953" colour="4294967295" rotation="0"/>
     <instance objName="obPortal" x="736" y="160" name="inst_3CAA7BE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obFear" x="192" y="384" name="inst_307B9A9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="288" y="384" name="inst_8533A635" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obTransPaddle" x="64" y="416" name="inst_6E6A9CAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obTransPaddle" x="192" y="224" name="inst_E34DAFC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -178,7 +177,6 @@
     <instance objName="obWall" x="160" y="256" name="inst_014A6501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="192" y="256" name="inst_555D13A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obBug" x="416" y="96" name="inst_6BCA1FE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obBug" x="576" y="704" name="inst_0A1CA9D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="832" y="608" name="inst_0C0FDC13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="800" y="608" name="inst_E13CBBB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="832" y="640" name="inst_557AFF1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -329,6 +327,12 @@
     <instance objName="obWall" x="768" y="256" name="inst_148E36DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="320" y="224" name="inst_EC222B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obWall" x="288" y="224" name="inst_F90A966F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obBug" x="544" y="704" name="inst_29A9A684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obHP" x="399" y="179" name="inst_AA991EA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obHP" x="445" y="180" name="inst_39DBAE63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obHP" x="490" y="180" name="inst_358FCF2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obHP" x="538" y="180" name="inst_32F6FFB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obHP" x="584" y="180" name="inst_B0FF203A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

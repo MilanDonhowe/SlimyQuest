@@ -98,6 +98,8 @@
       <sprite>sprites\spNPCHat</sprite>
       <sprite>sprites\spNPCsunglasses</sprite>
     </sprites>
+    <sprite>sprites\spTree</sprite>
+    <sprite>sprites\spOptions</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
@@ -163,6 +165,7 @@
       <object>objects\obTitle</object>
       <object>objects\obTitleNull</object>
       <object>objects\obCloud</object>
+      <object>objects\obOptions</object>
     </objects>
     <object>objects\obj_text</object>
     <object>objects\obSign</object>
@@ -203,8 +206,10 @@
       <object>objects\obNPCmerc</object>
       <object>objects\obNPCslep</object>
       <object>objects\obNPCmess</object>
+      <object>objects\onExtra</object>
     </objects>
     <object>objects\obMusic</object>
+    <object>objects\obTree</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tm_Parabola</timeline>
@@ -224,6 +229,7 @@
     <room>rooms\rmFinalExpos</room>
     <room>rooms\rmLvlBOSS</room>
     <room>rooms\rmEndGame</room>
+    <room>rooms\rmCredits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

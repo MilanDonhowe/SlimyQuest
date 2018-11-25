@@ -80,7 +80,7 @@ transform = true;
           <argument>
             <kind>1</kind>
             <string>instance_destroy(obj_text);
-scr_text("I think the way to beat Matlet is scoring on him (get your ball past him) in the pong match then punching him when he falls down to the ground.  Anways, GOOD LUCK!", 0.5, x+20, y-100);
+scr_text("I think the way to beat Matlet is scoring on him (hit the ball past him) in the pong match then punching him when he falls down to the ground.  Anways, GOOD LUCK!", 0.5, x+20, y-100);
 alarm[4] = 540;
 </string>
           </argument>

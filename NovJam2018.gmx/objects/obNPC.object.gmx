@@ -45,7 +45,8 @@ boxheight = (text_height/2) + (padding*2);
 
 print = "";
 time = 0;
-
+// Reset joke caption from boss
+window_set_caption("A Slimy Quest");
 </string>
           </argument>
         </arguments>

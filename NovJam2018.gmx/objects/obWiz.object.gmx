@@ -32,8 +32,10 @@ fight = false;
 vulnerable = false;
 global.stay = true;
 
-hp = 150;
+hp = 100;
 spd = 2;
+
+window_set_caption("2018 Pong World Championship");
 </string>
           </argument>
         </arguments>
@@ -157,9 +159,9 @@ alarm[2] = 120;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_text("Hahaha... so you actually have gotten past the dungeon.  You have overcome all obstacles.    ... Except one.  ME.  HAHAHAHA GAME OVER SILLY SLIME, EN GUARDE!", 0.35, x, y-128, "wiz");
+            <string>scr_text("Hahaha... so you actually have gotten past the dungeon.  You have overcome all obstacles.    ... Except one.  ME.  HAHAHAHA GAME OVER SILLY SLIME, EN GUARDE!", 0.5, x, y-128, "wiz");
 
-alarm[1] = 600;
+alarm[1] = 700;
 </string>
           </argument>
         </arguments>

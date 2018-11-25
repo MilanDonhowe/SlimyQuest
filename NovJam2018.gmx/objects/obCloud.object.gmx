@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>randomize();
-speed = random_range(0.5, 1.5);
+if (room = rmTitle) speed = random_range(0.5, 1.5);
+
+if (room = rmCredits) speed = random_range(0.1, 0.5);
+
 direction = 0;
 </string>
           </argument>
@@ -50,7 +53,7 @@ direction = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ((room != rmTitle) and (room != rmIntro)){
+            <string>if ((room != rmTitle) and (room != rmIntro) and (room != rmCredits)){
     instance_destroy();
 } 
 </string>
