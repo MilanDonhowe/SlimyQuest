@@ -227,14 +227,14 @@
     <option_hasloadimage>false</option_hasloadimage>
     <option_helpkey>true</option_helpkey>
     <option_html5_CreationEventOrder>true</option_html5_CreationEventOrder>
-    <option_html5_WebGL>2</option_html5_WebGL>
+    <option_html5_WebGL>0</option_html5_WebGL>
     <option_html5_advertising_enable>0</option_html5_advertising_enable>
     <option_html5_advertising_key></option_html5_advertising_key>
     <option_html5_advertising_type>Supersonic Ads</option_html5_advertising_type>
     <option_html5_allow_fullscreen>True</option_html5_allow_fullscreen>
     <option_html5_alwaysreload>False</option_html5_alwaysreload>
-    <option_html5_browser_title>Created with GameMaker: Studio</option_html5_browser_title>
-    <option_html5_centergame>False</option_html5_centergame>
+    <option_html5_browser_title>A Slimy Quest</option_html5_browser_title>
+    <option_html5_centergame>True</option_html5_centergame>
     <option_html5_facebook_app_display_name></option_html5_facebook_app_display_name>
     <option_html5_facebook_appid></option_html5_facebook_appid>
     <option_html5_facebook_enable>0</option_html5_facebook_enable>
@@ -246,7 +246,7 @@
     <option_html5_google_tracking_id></option_html5_google_tracking_id>
     <option_html5_icon>Configs\Default\html5\fav.ico</option_html5_icon>
     <option_html5_index>-1</option_html5_index>
-    <option_html5_interpolate>-1</option_html5_interpolate>
+    <option_html5_interpolate>0</option_html5_interpolate>
     <option_html5_jsprepend></option_html5_jsprepend>
     <option_html5_loadingbar>-1</option_html5_loadingbar>
     <option_html5_localrunalert>True</option_html5_localrunalert>
@@ -494,7 +494,7 @@
     <option_version_copyright></option_version_copyright>
     <option_version_description></option_version_description>
     <option_version_major>1</option_version_major>
-    <option_version_minor>0</option_version_minor>
+    <option_version_minor>1</option_version_minor>
     <option_version_product></option_version_product>
     <option_version_release>0</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
@@ -577,7 +577,7 @@
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
-    <option_windows_mainor_version>0</option_windows_mainor_version>
+    <option_windows_mainor_version>1</option_windows_mainor_version>
     <option_windows_major_version>1</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info></option_windows_product_info>

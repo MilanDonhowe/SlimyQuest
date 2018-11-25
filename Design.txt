@@ -1,6 +1,7 @@
-Idea: Platformer with pokemon style combat.  Interact with enemy => pokemon battle
+@font-face {
+				font-family:"Kongtext";
+				src: url("html5game/kongtext-webfont.woff");
+				
+}
 
-Plot:
-
-Lab is creating making hybrid viruses in order to make the ultimate vaccine against everything.  You are the prototyped vaccine.  You try to traverse an area and kill all the viruses.
-
+<p style="'font:Kongtext'"></p>

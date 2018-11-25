@@ -229,7 +229,7 @@ if (fight == true){
 
 
 if (!hp &gt; 0){
-    instance_create(x, y, obPortal);
+    instance_create(x, 320, obPortal);
     instance_destroy();
 }
 </string>

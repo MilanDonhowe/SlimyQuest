@@ -69,6 +69,8 @@ draw_set_color(c_black);
 draw_rectangle(x, y, x+boxwidth, y+boxheight+50, 0);
 //draw_set_color(c_white);
 //draw_rectangle(x, y, x+boxwidth, y+boxheight, 1);
+draw_set_color(c_white);
+
 
 if (char != undefined) {
     if (char == 'wiz'){

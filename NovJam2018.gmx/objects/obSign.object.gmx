@@ -35,6 +35,8 @@ spd = 1;
 
 font = font_add("kongtext.ttf", 10, false, false, 32, 128);
 
+//font = fntReplace;
+
 offset = 0;
 specialOffset = 0;
 </string>
@@ -130,7 +132,7 @@ if (draw == true) {
             break;
         case rmCredits:
             text = "Thanks for playing!  Escape (ESC key) to exit.  Or you could just wait here and listen to the music for a little while.  Some neat trivia: This game was made for the 2018 GitHub/Itch.io GameOFF game Jam.  The theme was Hybrid.  This game was made by Milan Donhowe."
-            offset = -250;
+            offset = -300;
             break;
         default:
             text = "M to toggle music on/off.";
@@ -152,11 +154,19 @@ if (draw == true) {
     draw_set_alpha(0.5);
     draw_set_font(font);
     draw_set_color(c_black);
+    
     if (room != rmCredits){
         draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+boxheight + offset, 0);
     } else {
         draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+(boxheight+offset)/2-100, 0);
     }
+    
+    /*
+    if (room != rmCredits){
+        draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+boxheight + offset, 0);
+    } else {
+        draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+(boxheight+offset)/2-100, 0);
+    }*/
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);

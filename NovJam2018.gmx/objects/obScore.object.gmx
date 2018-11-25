@@ -31,7 +31,8 @@ global.delay = 60;
 global.spd = 2;
 
 //score font
-fntScore = font_add("kongtext.ttf", 40, false, false, 32, 128);
+font = font_add("kongtext.ttf", 40, false, false, 32, 128);
+//font = fntReplaceScore;
 
 global.stay = true;
 </string>
@@ -56,7 +57,7 @@ global.stay = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fntScore);
+            <string>draw_set_font(font);
 draw_set_color(c_white);
 
 if(global.theScore &gt; 1){

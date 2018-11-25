@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// Load Kong Text
-fntKongText = font_add("kongtext.ttf", 12, false, false, 32, 128);
+font = font_add("kongtext.ttf", 12, false, false, 32, 128);
+//font = fntReplaceScore;
+
 
 if (instance_exists(obScore)){
     alarm[0] = global.delay;
@@ -108,7 +110,7 @@ image_yscale = 1/4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fntKongText);
+            <string>draw_set_font(font);
 draw_set_color(c_orange);
 draw_text(x, y, "500")
 </string>

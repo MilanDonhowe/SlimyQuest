@@ -128,6 +128,7 @@ if(place_meeting(x,y, obBOSSdmg)){
     audio_play_sound(sndEnemyDamage, 1, 0);
     // change state for obWiz
     with(obWiz){
+        instance_create(x,y, ob1k);
         fight = false;
         vulnerable = true;
         hp -= 25
