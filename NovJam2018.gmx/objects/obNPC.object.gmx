@@ -32,8 +32,8 @@ maxlength = view_wview[0];
 text = "Ah! You must be the slime who brutally murdered the Wizard.  Thank you  ... I guess?";
 spd = 0.25;
 
-font = font_add("kongtext.ttf", 10, false, false, 32, 128);
-//font = fntReplace;  
+//font = font_add("kongtext.ttf", 10, false, false, 32, 128);
+font = fntKongTiny;  
 
   
 text_length = string_length(text);

@@ -33,7 +33,9 @@ padding = 8;
 maxlength = view_wview[0];
 spd = 1;
 
-font = font_add("kongtext.ttf", 10, false, false, 32, 128);
+//font = font_add("kongtext.ttf", 10, false, false, 32, 128);
+
+font = fntKongTiny;
 
 //font = fntReplace;
 
@@ -161,12 +163,12 @@ if (draw == true) {
         draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+(boxheight+offset)/2-100, 0);
     }
     
-    /*
+    
     if (room != rmCredits){
         draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+boxheight + offset, 0);
     } else {
         draw_rectangle(x+specialOffset, y + offset, x+boxwidth+specialOffset, y+(boxheight+offset)/2-100, 0);
-    }*/
+    }
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);

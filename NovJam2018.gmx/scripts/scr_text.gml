@@ -15,8 +15,8 @@ with (txt){
         char = undefined;
     }
     
-    font = font_add("kongtext.ttf", 10, false, false, 32, 128);
-    //font = fntReplace;
+    //font = font_add("kongtext.ttf", 10, false, false, 32, 128);
+    font = fntKongTiny;
     
     text_length = string_length(text);
     font_size = font_get_size(font);

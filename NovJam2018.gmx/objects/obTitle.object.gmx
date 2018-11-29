@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Load Kong Text
-font = font_add("kongtext.ttf", 30, false, false, 32, 128);
+//font = font_add("04b_03__.TTF", 30, false, false, 32, 128);
+
+font = fntKongText;
+
 
 blink = 40;
 bleep = 0;

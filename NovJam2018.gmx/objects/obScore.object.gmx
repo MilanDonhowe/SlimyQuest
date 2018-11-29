@@ -31,8 +31,10 @@ global.delay = 60;
 global.spd = 2;
 
 //score font
-font = font_add("kongtext.ttf", 40, false, false, 32, 128);
+//font = font_add("kongtext.ttf", 40, false, false, 32, 128);
 //font = fntReplaceScore;
+font = fntKongTiny;
+
 
 global.stay = true;
 </string>

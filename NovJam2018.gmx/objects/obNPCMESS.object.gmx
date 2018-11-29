@@ -37,9 +37,9 @@ maxlength = view_wview[0];
 text = "Great job meager slime!  I knew you could do it!  Now that the evil wizard Matlet is dead I can finally establish a proper communist government in the dungeon!";
 spd = 0.25;
 
-font = font_add("kongtext.ttf", 10, false, false, 32, 128);
+//font = font_add("kongtext.ttf", 10, false, false, 32, 128);
 //font = fntReplace;  
-
+font = fntKongTiny;
   
 text_length = string_length(text);
 font_size = font_get_size(font);
